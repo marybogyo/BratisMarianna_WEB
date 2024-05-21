@@ -18,7 +18,8 @@ export default function Valaszt(){
                 >
                 <option value="valassz">Válassz ténát!</option>
                 {temaLista.length > 0 && temaLista.map((element)=>{
-                    <option key={element.id} value={element.temanev}></option>
+                    <option key={element.id} value={element.temanev}>
+                    {element.temanev}</option>
                 })}
             
         </select>
